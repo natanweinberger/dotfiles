@@ -1,0 +1,9 @@
+# Rebase the current branch onto remote master
+catchup() {
+    current_branch=$(git branch | grep \* | cut -f 2 -d ' ')
+    echo "Rebasing $current_branch onto master"
+    git checkout master
+    git pull
+    git checkout $current_branch
+    git rebase master
+}
