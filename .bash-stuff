@@ -1,0 +1,7 @@
+# Define the command patterns that won't be saved to bash history
+export HISTIGNORE="&:[ ]*:exit"
+
+# Turn off line wrapping in mycli
+# https://www.mycli.net/pager
+# -R fixes git color formatting
+export LESS="-SXR"
