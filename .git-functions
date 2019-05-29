@@ -7,3 +7,9 @@ catchup() {
     git checkout $current_branch
     git rebase master
 }
+
+# Delete merged branches locally
+# Skip the current branch, which will have a leading "* "
+cleanup() {
+    git branch --merged | grep '^[^*]' | xargs git branch -d
+}
