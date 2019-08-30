@@ -5,9 +5,9 @@ This repository consists of several files that contain Bash aliases and function
 # Install
 ```bash
 # Clone the repo, in this example into a directory called .dotfiles
-~ > git clone https://www.github.com/natanweinberger/dotfiles.git ~/.dotfiles
+$ ~ > git clone https://www.github.com/natanweinberger/dotfiles.git ~/.dotfiles
 # Run each of the dotfiles in the repo
-~ > . ~/.dotfiles/install.sh
+$ ~ > . ~/.dotfiles/install.sh
 ```
 
 Add a line to your `.bash_profile` that calls `install.sh`. This will automatically source the dotfiles in new shells.
@@ -23,11 +23,11 @@ If you add any new dotfiles to the directory, `install.sh` will automatically pi
 
   ```bash
 # You can run install.sh from anywhere!
-✅ ~/.dotfiles > . install.sh  # from within the dotfiles directory
+✅$ ~/.dotfiles > . install.sh  # from within the dotfiles directory
 # or
-✅ ~ > . ~/.dotfiles/install.sh  # from your home directory
+✅$ ~ > . ~/.dotfiles/install.sh  # from your home directory
 # or
-✅ ~/Desktop > . ~/.dotfiles/install.sh  # really, from anywhere, it doesn't matter
+✅$ ~/Desktop > . ~/.dotfiles/install.sh  # really, from anywhere, it doesn't matter
   ```
 
 # More notes
