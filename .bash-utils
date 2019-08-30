@@ -5,3 +5,9 @@ export HISTIGNORE="&:[ ]*:exit"
 # https://www.mycli.net/pager
 # -R fixes git color formatting
 export LESS="-SXR"
+
+# Find external IP address via DNS
+# alias whatsmyip_dns="dig @resolver1.opendns.com ANY myip.opendns.com +short"
+
+# Find external IP address via HTTP
+alias whatsmyip="curl -s http://whatismyip.akamai.com/"
