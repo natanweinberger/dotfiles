@@ -1,3 +1,9 @@
+# Set the default editor to vim
+EDITOR=vim
+
+# Set the characters that separate words
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>/\'
+
 # Enable access to version control state
 autoload -Uz vcs_info
 precmd() { vcs_info }
