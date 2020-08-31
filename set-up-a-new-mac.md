@@ -33,8 +33,18 @@ $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/lo
 
 5. Install GCloud SDK
 
-a. https://cloud.google.com/sdk/docs/downloads-interactive
-- `curl https://sdk.cloud.google.com | bash`
-- `exec -l $SHELL`
-- `gcloud init`
-- `gcloud auth configure-docker`
+	a. https://cloud.google.com/sdk/docs/downloads-interactive
+
+```bash
+$ curl https://sdk.cloud.google.com | bash
+$ exec -l $SHELL
+$ gcloud init
+$ gcloud auth configure-docker
+```
+
+6. Set Git user information
+
+```bash
+$ git config --global user.name "Natan Weinberger"
+$ git config --global user.email "my@email.com"
+```
