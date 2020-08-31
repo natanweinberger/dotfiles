@@ -17,15 +17,17 @@ $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/lo
 
 	c. Edit the key mappings for:
 
-		1. Ctrl + Left: Send escape sequence [1;5D
+		1. Alt + Left: Send escape sequence b
 
-		2. Ctrl + Right: Send escape sequence [1;5C
+		2. Alt + Right: Send escape sequence f
 
 		3. Cmd + Left: Send hex code 0x01
 
 		4. Cmd + Right: Send hex code 0x05
 
 		5. Alt + Delete: Send hex code 0x1B 0x08 (also, edit environment variable WORDCHARS to exclude forward slashes)
+
+		6. Cmd + Delete: Send hex code 0x18 0x7f (https://stackoverflow.com/a/32340345)
 
 4. Install Docker Desktop
 
