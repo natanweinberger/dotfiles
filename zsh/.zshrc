@@ -16,3 +16,6 @@ PROMPT='%F{green}%T%f${vcs_info_msg_0_} %~ > '
 # Set up functionality to delete from cursor position to beginning of line
 # Used when mapping iTerm keys Cmd + Delete
 bindkey "^X\\x7f" backward-kill-line
+
+# When iterating through history, skip continuous duplicate commands
+setopt HIST_IGNORE_DUPS
