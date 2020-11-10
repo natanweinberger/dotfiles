@@ -1,3 +1,5 @@
+DOTFILES=~/projects/dotfiles/zsh
+
 # Set the default editor to vim
 EDITOR=vim
 
@@ -19,3 +21,5 @@ bindkey "^X\\x7f" backward-kill-line
 
 # When iterating through history, skip continuous duplicate commands
 setopt HIST_IGNORE_DUPS
+
+. $DOTFILES/git.sh
