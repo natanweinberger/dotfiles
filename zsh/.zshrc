@@ -6,6 +6,11 @@ EDITOR=vim
 # Set the characters that separate words
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>/\'
 
+# Add .zsh to fpath for git autocompletion
+zstyle ':completion:*:*:git:*' script $DOTFILES/git-autocomplete/git-completion.bash
+fpath=($DOTFILES/git-autocomplete $fpath)
+autoload -Uz compinit && compinit
+
 # Enable access to version control state
 autoload -Uz vcs_info
 precmd() { vcs_info }
