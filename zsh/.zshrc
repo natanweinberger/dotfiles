@@ -27,4 +27,8 @@ bindkey "^X\\x7f" backward-kill-line
 # When iterating through history, skip continuous duplicate commands
 setopt HIST_IGNORE_DUPS
 
+# Add utility functions for Git
 . $DOTFILES/git.sh
+
+# Add directories to PATH
+. $DOTFILES/../path.sh
