@@ -32,3 +32,6 @@ setopt HIST_IGNORE_DUPS
 
 # Add directories to PATH
 . $DOTFILES/../path.sh
+
+# Load private environment variables
+[ -f $DOTFILES/../private.sh ] && . $DOTFILES/../private.sh
