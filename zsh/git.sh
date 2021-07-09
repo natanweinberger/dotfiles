@@ -17,3 +17,9 @@ commit() {
     [[ -n $(jira) ]] &&  # If the branch has a ticket ID, attempt to commit
     git commit -m "$(jira): $1" 
 }
+
+
+catchup() {
+    # Rebase the current branch onto remote master
+    $(git branch | grep '*' | cut -b 2- | pbcopy) && git switch master && git pull && git switch $(pbpaste) && git rebase master
+}
