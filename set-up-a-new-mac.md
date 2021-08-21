@@ -48,3 +48,10 @@ $ gcloud auth configure-docker
 $ git config --global user.name "Natan Weinberger"
 $ git config --global user.email "my@email.com"
 ```
+
+7. Create a symbolic link for the repo version of `.zshrc` or `.bashrc` to the home directory
+
+```bash
+# The path to the original needs to be relative to the location of the symbolic link, so be explicit
+$ ln -s ~/projects/dotfiles/zsh/.zshrc ~/.zshrc
+```
