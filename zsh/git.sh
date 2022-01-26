@@ -20,6 +20,6 @@ commit() {
 
 
 catchup() {
-    # Rebase the current branch onto remote master
-    $(git branch | grep '*' | cut -b 2- | pbcopy) && git switch master && git pull && git switch $(pbpaste) && git rebase master
+    # Rebase the current branch onto remote main
+    $(git branch | grep '*' | cut -b 2- | pbcopy) && git switch main && git pull && git switch $(pbpaste) && git rebase main
 }
