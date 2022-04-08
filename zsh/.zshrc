@@ -3,8 +3,8 @@ DOTFILES=~/projects/dotfiles/zsh
 # Set the default editor to vim
 EDITOR=vim
 
-# Don't split words on these special characters  when navigating word-by-word
-WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+# Don't split words on these special characters when navigating word-by-word
+WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
 
 # Add .zsh to fpath for git autocompletion
 zstyle ':completion:*:*:git:*' script $DOTFILES/git-autocomplete/git-completion.bash
