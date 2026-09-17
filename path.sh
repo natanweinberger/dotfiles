@@ -5,5 +5,6 @@ export YTMP3_OUTPUT_DIR=~/Documents/Spotify
 PATH=$PATH:~/projects/youtube-to-mp3
 PATH=$PATH:~/projects/split-to-tracks
 PATH=$PATH:~/projects/mlbv-docker
+PATH=$PATH:~/opt/homebrew/bin
 
 export PATH
