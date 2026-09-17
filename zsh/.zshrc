@@ -4,7 +4,7 @@ DOTFILES=~/projects/dotfiles/zsh
 EDITOR=vim
 
 # Don't split words on these special characters when navigating word-by-word
-WORDCHARS='*?_-[]~=&;!#$%^(){}<>'
+WORDCHARS='*_-[]~=;!#$%^(){}<>'
 
 # Add .zsh to fpath for git autocompletion
 zstyle ':completion:*:*:git:*' script $DOTFILES/git-autocomplete/git-completion.bash
@@ -42,3 +42,13 @@ if which pyenv &> /dev/null ; then
 	export PATH="$PYENV_ROOT/bin:$PATH"
 	eval "$(pyenv init --path)"
 fi
+
+az_login() {
+	az config set core.login_experience_v2=off;
+	az login;
+	az acr login -n crbluejaysanalytics;
+}
+
+title() {
+	echo -ne "\033]1;$*\007"
+}
